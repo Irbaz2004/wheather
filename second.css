@@ -1,0 +1,130 @@
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	/* background: linear-gradient(to right, #2196F3, #ffffff); */
+	background-image: url(https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?cs=srgb&dl=pexels-pixabay-209831.jpg&fm=jpg);
+	/* background-image: url(https://dynamicpowerpoint.com/wp-content/uploads/2022/02/thunder-full-hd-weather-icon-sample.gif); */
+	background-size: cover;
+}
+
+.container {
+	text-align: center;
+	animation-name: c;
+	animation-duration: 5s;
+	animation-timing-function: 1;
+}
+
+@keyframes c{
+	0%{
+		transform: scale(.1);
+
+	}
+	100%{
+		transform: scale(1);
+
+	}
+
+}
+.weather-card {
+	background-color: rgba(0, 0, 0, 0.29);
+	border-radius: 20px;
+	padding: 20px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.281);
+	transition: transform 0.3s ease-in-out;
+	width: 450px;
+}
+
+
+
+
+.weather-card:hover {
+	transform: scale(1.05);
+	/* background-color: white; */
+}
+
+
+.weather-card:hover #city-input-btn{
+	background-color: black;
+	color: white;
+}
+
+#city-input {
+	padding: 15px;
+	margin: 10px 0;
+	width: 70%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+#city-input:focus {
+	outline: none;
+	border-color: #ffffff;
+}
+
+#city-input::placeholder {
+	color: #aaa;
+}
+
+#city-input-btn {
+	padding: 10px;
+	background-color: #000000;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+#city-input-btn:hover {
+	background-color: #1565C0;
+}
+
+#weather-info {
+	display: none;
+	color: white;
+
+}
+
+#weather-icon {
+	width: 100px;
+	height: 100px;
+}
+
+#temperature {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 8px 0;
+	color: white;
+
+}
+
+#description {
+	font-size: 18px;
+	margin-bottom: 10px;
+    font-weight: bold;
+	color: white;
+}
+
+#wind-speed {
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+}
+
+#date {
+	font-size: 14px;
+	color: rgb(255, 255, 255);
+}
+
+#h1{
+	color: white;
+}
+/* 
+.weather-card:hover #weather-info, #temperature, #description, #wind-speed, #date, #h1{
+	color: black;
+	font-weight: bold;
+} */
